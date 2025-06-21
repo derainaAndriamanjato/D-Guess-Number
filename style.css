@@ -1,0 +1,120 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Écran de chargement */
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.loading-screen img {
+    width: 100px;
+    height: 100px;
+    animation: pulse 1.5s infinite;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.label {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Écran du jeu */
+.tester-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.label2 {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    background-color: #111111;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #45a049;
+}
+
+.text {
+    font-size: 1.1rem;
+    min-height: 30px;
+    color: #FF9800;
+}
+
+.buttons {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s;
+    width: 80%;
+}
+
+.buttons:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
