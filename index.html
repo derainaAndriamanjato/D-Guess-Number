@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-direction" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-moblie-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="icon" href="icon.png" sizes="192x192">
+    <link rel="stylesheet" href="style.css">
+
+    <title>D-Devine</title>
+</head>
+<body>
+    <!--Le corps-->
+    <div class="app-container" id="appContainer">
+        <div class="loading-screen" id="loadingScreen">
+            <img src="icon.png" alt="Logo">
+            <h1 class="title">DERA APP</h1>
+            <label class="label" id="loadingLabel">D-Guess Number - Chargement...</label> <!--Simulation (avec ?%)-->
+        </div>
+
+        <div class="tester-screen" id="testerScreen">
+            <h1 class="title">D-Guess Number</h1>
+            <p class="description" id="description">Essayer de deviner le nombre en seulement 10 coups. SI TU PEUX !</p>
+            <label class="label2" id="tryRemaining">Essayes restants: 10</label>
+            <input type="number" name="number" id="number" placeholder="Taper le nombre ici" min="1" max="100" value="50"> <!--Nombre entre 1 à 100-->
+            <p class="text" id="text"></p> <!--Example de phrase: Trop bas, monter un peu!-->
+            <button class="buttons" id="guessNumber">Deviner</button> <!--Peut aussi être appelé par le bouton Enter-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
